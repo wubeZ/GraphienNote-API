@@ -6,11 +6,8 @@
   <a href="https://" target="_blank" alt="stat">
        <img src="https://img.shields.io/badge/api-underconstruction-yellowgreen.svg" alt="api">
   </a>
-  <a href="https://saythanks.io/to/wubezeleke@gmail.com">
+  <a href="https://saythanks.io/to/wubezeleke">
       <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
-  </a>
-  <a href="https://www.paypal.me/">
-    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
   </a>
  </p>
 
