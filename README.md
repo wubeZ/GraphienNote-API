@@ -39,7 +39,7 @@ $ npm install
 $ npm start
 ```
 ## Credits
-This software uses the following technologies and packages predominantly:
+This API uses the following technologies and packages predominantly:
 
 * [Node.js](https://nodejs.org/)
 * [Express](https://expressjs.com/)
