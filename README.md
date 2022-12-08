@@ -19,11 +19,15 @@
 </p>
 
 ## Features
-* Create Notes
-* Update Notes
-* Delete Notes
-* Create Remainders
-* Search Notes
+* Create your Notes
+* Modify your notes
+* Delete your Notes
+* Search your notes based on tag or label or title
+* Create Remainders and set their time
+* Update Remainder's contents
+* Delete Remainders
+* authentication of user with tight security measures
+* a cache server for enhancing the read performance
 
 ## How to Use
 Currently, the system is development.
