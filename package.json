@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/server.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "start":"nodemon src/sever.js",
+    "start": "nodemon src/sever.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,9 +26,11 @@
     "helmet": "^6.0.1",
     "joi": "^17.7.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.7.5",
+    "mongoose": "^6.8.0",
     "multer": "^1.4.5-lts.1",
-    "pino": "^8.7.0"
+    "pino": "^8.7.0",
+    "redis": "^4.5.1",
+    "util": "^0.12.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
