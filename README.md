@@ -20,7 +20,7 @@
 
 ## Features
 * Create your Notes
-* Modify your notes
+* Modify your Note's content
 * Delete your Notes
 * Search your notes based on tag or label or title
 * Create Remainders and set their time
