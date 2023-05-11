@@ -10,6 +10,10 @@ router
     .post(notecontroller.createNote);
 
 router
+    .route('/search')
+    .get(notecontroller.getNotesByFilter)
+
+router
     .route('/:id')
     .get(notecontroller.getNoteById)
     .put(auth, notecontroller.updateNoteById)

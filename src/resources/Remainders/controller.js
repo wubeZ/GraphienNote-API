@@ -71,10 +71,24 @@ const deleteRemainderById = async (req, res) => {
     }
 }
 
+const getRemaindersByFilter = async (req, res) => {
+    try{
+        const filter = req.query;
+        const remainders = await RemainderModel.find(filter);
+        logger.info(`Found ${remainders.length} remainders`);
+        res.status(200).json(notes);
+    }
+    catch(err){
+        logger.error(err);
+        res.status(500).json({ error: err });
+    }
+}
+
 export default {
     createRemainder,
     getAllRemainders,
     getRemainderById,
     updateRemainderById,
-    deleteRemainderById
+    deleteRemainderById,
+    getRemaindersByFilter
 };

@@ -68,10 +68,25 @@ const deleteNoteById = async (req, res) => {
     }
 }
 
+const getNotesByFilter = async (req, res) => {
+    try{
+        const filter = req.query;
+        const notes = await NoteModel.find(filter);
+        logger.info(`Found ${notes.length} notes`);
+        res.status(200).json(notes);
+    }
+    catch(err){
+        logger.error(err);
+        res.status(500).json({ error: err });
+    }
+}
+
+
 export default {
     createNote,
     getAllNotes,
     getNoteById,
     updateNoteById,
-    deleteNoteById
+    deleteNoteById,
+    getNotesByFilter
 }

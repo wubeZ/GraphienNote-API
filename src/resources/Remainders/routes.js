@@ -10,6 +10,10 @@ router
     .post(auth, remaindercontroller.createRemainder);
 
 router
+    .route('/search')
+    .get(remaindercontroller.getRemaindersByFilter);
+
+router
     .route('/:id')
     .get(remaindercontroller.getRemainderById)
     .put(auth, remaindercontroller.updateRemainderById)
