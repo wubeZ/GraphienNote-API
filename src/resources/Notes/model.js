@@ -1,7 +1,7 @@
 import mongoose, {Schema} from 'mongoose';
 
 const NoteSchema = new Schema({
-    createdBy:{type: Schema.Types.ObjectId, required: true},
+    createdBy:{type: Schema.Types.ObjectId,ref:'User' ,required: true},
     title: {type: String, default: false},
     content: {type: String, default: true},
     tag: {type: String, default: false},
@@ -13,8 +13,8 @@ const NoteSchema = new Schema({
 
 NoteSchema.set('toJSON', {virtuals: true})
 
-const noteModel = mongoose.model('Notes', NoteSchema)
+const NoteModel = mongoose.model('Notes', NoteSchema)
 
 module.exports = {
-    noteModel
+    NoteModel
 }

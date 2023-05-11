@@ -12,8 +12,8 @@ const RemainderSchema = new Schema({
 
 RemainderSchema.set('toJSON',{virtuals: true})
 
-const remainderModel = mongoose.model('Remainders', RemainderSchema)
+const RemainderModel = mongoose.model('Remainders', RemainderSchema)
 
 module.exports = {
-    remainderModel
+    RemainderModel
 }
